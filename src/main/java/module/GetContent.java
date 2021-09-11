@@ -15,6 +15,8 @@ import java.util.Iterator;
 import java.util.List;
 
 public class GetContent {
+
+
     private Object getCellValue(Cell cell) {
 
 
@@ -44,7 +46,6 @@ public class GetContent {
         FileInputStream inputStream = new FileInputStream(new File(excelFilePath));
 
         Workbook workbook = new XSSFWorkbook(inputStream);
-
         Sheet firstSheet = workbook.getSheetAt(0);
 
         Iterator<Row> iterator = firstSheet.iterator();
@@ -69,7 +70,7 @@ public class GetContent {
                         break;
 
                     case 2:
-                         dwarf.setFaveNum((Double) getCellValue(nextCell));
+                         dwarf.setFaveNum((Double) getCellValue(nextCell));  //TODO WHY Double???
                         break;
                 }
             }

@@ -41,7 +41,7 @@ public class Main {
         }
 
         for (Dwarf dwarf:extractedDwarfData) {
-            System.out.println(extractedDwarfData);
+            System.out.println(dwarf);
         }
 
     }

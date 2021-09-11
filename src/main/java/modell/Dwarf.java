@@ -12,7 +12,7 @@ public class Dwarf {
 
     @Override
     public String toString() {
-        return  "\'s favourite fruit is " +faveFruit + " he can eat " + faveNum + " pieces of it at one time.\'n";
+        return name + "\'s favourite fruit is " +faveFruit + " he can eat " + faveNum + " pieces of it at one time.";
     }
 
     public String getName() {
