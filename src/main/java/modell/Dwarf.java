@@ -4,7 +4,7 @@ public class Dwarf {
 
     private String name;
     private String faveFruit;
-    private int faveNum;
+    private double faveNum;
 
     public Dwarf() {
     }
@@ -12,7 +12,7 @@ public class Dwarf {
 
     @Override
     public String toString() {
-        return  "\'s favourite fruit is" +faveFruit + "he can eat " + faveNum + "pieces of it at one time.";
+        return  "\'s favourite fruit is " +faveFruit + " he can eat " + faveNum + " pieces of it at one time.\'n";
     }
 
     public String getName() {
@@ -31,11 +31,11 @@ public class Dwarf {
         this.faveFruit = faveFruit;
     }
 
-    public int getFaveNum() {
+    public double getFaveNum() {
         return faveNum;
     }
 
-    public void setFaveNum(int faveNum) {
+    public void setFaveNum(double faveNum) {
         this.faveNum = faveNum;
     }
 }
